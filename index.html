@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the Public Administration program—leadership, service, and transformation for tomorrow's public sector." />
+  <title>Public Administration | Lead. Serve. Transform.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fixed glass header: logo + primary navigation -->
+  <header class="site-header" aria-label="Site header">
+    <div class="site-header__inner">
+      <a href="#hero" class="logo-link">
+        <img src="images/psu_logo.png" alt="University logo" class="site-logo" width="48" height="48" />
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open menu"
+      >
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#what-is">Program</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#learn">Learn</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#cta" class="site-nav__cta">Enroll</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="site-nav__backdrop" hidden aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <!-- 1. Hero — full viewport intro -->
+    <section id="hero" class="panel panel--hero" aria-labelledby="hero-title">
+      <div class="panel__bg panel__bg--hero parallax-layer" data-parallax="0.35"></div>
+      <div class="panel__overlay panel__overlay--hero"></div>
+      <div class="panel__inner panel__inner--center">
+        <p class="eyebrow reveal" data-reveal>Undergraduate journey</p>
+        <h1 id="hero-title" class="hero-title reveal" data-reveal>Public Administration</h1>
+        <p class="hero-sub reveal" data-reveal>Lead. Serve. Transform.</p>
+        <a href="#what-is" class="scroll-hint" aria-label="Scroll to next section">
+          <span class="scroll-hint__text">Scroll</span>
+          <span class="scroll-hint__arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 2. What is Public Administration — split layout -->
+    <section id="what-is" class="panel panel--split" aria-labelledby="what-title">
+      <div class="split">
+        <div class="split__text">
+          <h2 id="what-title" class="section-title reveal-left" data-reveal>What is Public Administration?</h2>
+          <p class="lede reveal-left" data-reveal data-reveal-delay="80">
+            It is the craft of turning policy into action—where ethics, strategy, and people meet to move communities forward.
+          </p>
+          <p class="body-text reveal-left" data-reveal data-reveal-delay="160">
+            You will study how governments and institutions work—and how to make them work better for everyone.
+          </p>
+        </div>
+        <div class="split__visual reveal-right" data-reveal>
+          <div class="glass-frame">
+            <img src="images/Student4-scaled.jpg" alt="Students engaged in learning and collaboration" class="split__img" width="800" height="600" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Your Impact — parallax background -->
+    <section id="impact" class="panel panel--impact" aria-labelledby="impact-title">
+      <div class="panel__bg panel__bg--impact parallax-layer" data-parallax="0.5"></div>
+      <div class="panel__overlay panel__overlay--impact"></div>
+      <div class="panel__inner panel__inner--narrow">
+        <h2 id="impact-title" class="section-title section-title--light reveal" data-reveal>Your Impact</h2>
+        <p class="impact-copy reveal" data-reveal data-reveal-delay="100">
+          From local programs to national priorities, public administrators shape services millions rely on—health, safety, education, and opportunity.
+        </p>
+      </div>
+    </section>
+
+    <!-- 4. What You Will Learn — horizontal card slider -->
+    <section id="learn" class="panel panel--learn" aria-labelledby="learn-title">
+      <div class="learn-head">
+        <h2 id="learn-title" class="section-title reveal" data-reveal>What You Will Learn</h2>
+        <p class="lede learn-lede reveal" data-reveal data-reveal-delay="60">Core ideas that power modern governance—taught as a story you can apply.</p>
+      </div>
+      <div class="slider" data-slider>
+        <button type="button" class="slider__btn slider__btn--prev" data-slider-prev aria-label="Previous subjects">‹</button>
+        <div class="slider__viewport" data-slider-viewport>
+          <ul class="slider__track" data-slider-track>
+            <li class="subject-card"><span class="subject-card__n">01</span><h3>Public Policy</h3><p>Design, analysis, and delivery of programs that solve real problems.</p></li>
+            <li class="subject-card"><span class="subject-card__n">02</span><h3>Governance &amp; Ethics</h3><p>Accountability, transparency, and leadership with integrity.</p></li>
+            <li class="subject-card"><span class="subject-card__n">03</span><h3>Public Finance</h3><p>Budgets, fiscal stewardship, and responsible resource allocation.</p></li>
+            <li class="subject-card"><span class="subject-card__n">04</span><h3>Organizational Leadership</h3><p>Teams, change, and service culture in complex institutions.</p></li>
+            <li class="subject-card"><span class="subject-card__n">05</span><h3>Research &amp; Evidence</h3><p>Data and field insight to guide decisions citizens can trust.</p></li>
+            <li class="subject-card"><span class="subject-card__n">06</span><h3>Community Engagement</h3><p>Participation, dialogue, and co-creating solutions with stakeholders.</p></li>
+          </ul>
+        </div>
+        <button type="button" class="slider__btn slider__btn--next" data-slider-next aria-label="Next subjects">›</button>
+      </div>
+      <div class="slider__dots" data-slider-dots aria-hidden="true"></div>
+    </section>
+
+    <!-- 5. Career Paths — staggered grid -->
+    <section id="careers" class="panel panel--careers" aria-labelledby="careers-title">
+      <h2 id="careers-title" class="section-title reveal" data-reveal>Career Paths</h2>
+      <p class="lede careers-lede reveal" data-reveal data-reveal-delay="50">Where the degree can take you—one step at a time.</p>
+      <ul class="career-grid">
+        <li class="career-item fade-up" data-stagger><span class="career-item__icon" aria-hidden="true">◆</span>Local Government</li>
+        <li class="career-item fade-up" data-stagger><span class="career-item__icon" aria-hidden="true">◆</span>National Agencies</li>
+        <li class="career-item fade-up" data-stagger><span class="career-item__icon" aria-hidden="true">◆</span>Nonprofit Leadership</li>
+        <li class="career-item fade-up" data-stagger><span class="career-item__icon" aria-hidden="true">◆</span>Policy Analysis</li>
+        <li class="career-item fade-up" data-stagger><span class="career-item__icon" aria-hidden="true">◆</span>Program Management</li>
+        <li class="career-item fade-up" data-stagger><span class="career-item__icon" aria-hidden="true">◆</span>Public Affairs</li>
+      </ul>
+    </section>
+
+    <!-- 6. Student Journey — vertical timeline -->
+    <section id="journey" class="panel panel--journey" aria-labelledby="journey-title">
+      <h2 id="journey-title" class="section-title reveal" data-reveal>Student Journey</h2>
+      <ol class="timeline">
+        <li class="timeline__step reveal" data-reveal>
+          <span class="timeline__dot"></span>
+          <div class="timeline__card glass-card">
+            <h3>Enroll</h3>
+            <p>Begin with orientation, mentors, and a clear path through the curriculum.</p>
+          </div>
+        </li>
+        <li class="timeline__step reveal" data-reveal data-reveal-delay="80">
+          <span class="timeline__dot"></span>
+          <div class="timeline__card glass-card">
+            <h3>Learn</h3>
+            <p>Build foundations in policy, management, and ethical public service.</p>
+          </div>
+        </li>
+        <li class="timeline__step reveal" data-reveal data-reveal-delay="160">
+          <span class="timeline__dot"></span>
+          <div class="timeline__card glass-card">
+            <h3>Lead</h3>
+            <p>Take on projects, simulations, and roles that sharpen decision-making.</p>
+          </div>
+        </li>
+        <li class="timeline__step reveal" data-reveal data-reveal-delay="240">
+          <span class="timeline__dot"></span>
+          <div class="timeline__card glass-card">
+            <h3>Serve</h3>
+            <p>Apply your skills in the field—internships, outreach, and real community impact.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 7. Final CTA -->
+    <section id="cta" class="panel panel--cta" aria-labelledby="cta-title">
+      <div class="panel__inner panel__inner--center">
+        <h2 id="cta-title" class="cta-title reveal" data-reveal>Start Your Journey Today</h2>
+        <p class="cta-sub reveal" data-reveal data-reveal-delay="80">Join a program built for leaders who put people first.</p>
+        <a href="mailto:admissions@university.edu?subject=Public%20Administration%20Enrollment" class="btn btn--primary reveal" data-reveal data-reveal-delay="140">Enroll Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <img src="images/psu_logo.png" alt="" class="site-footer__logo" width="40" height="40" />
+      <div class="site-footer__info">
+        <p><strong>Public Administration</strong> — Office of Admissions</p>
+        <p>Email: <a href="mailto:admissions@university.edu">admissions@university.edu</a> · Tel: <a href="tel:+15550000000">+1 (555) 000-0000</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
