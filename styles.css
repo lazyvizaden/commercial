@@ -320,11 +320,11 @@ a:hover {
 }
 
 .panel__bg--hero {
-  background-image: url("images/psu_building.jpg");
+  background-image: url("psu_building.jpg");
 }
 
 .panel__bg--impact {
-  background-image: url("images/psu_building.jpg");
+  background-image: url("psu_building.jpg");
 }
 
 .panel__overlay {
